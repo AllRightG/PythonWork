@@ -1,0 +1,1 @@
+![Цвета](C:\Users\zabivaka\Pictures\COLORS.jpg)
