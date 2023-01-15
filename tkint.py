@@ -9,14 +9,15 @@ label = Label(
   text = 'Hello!',
   width = 30,
   height = 5,
-  underline = 0
+  underline = 0,
+  background='maroon1'
 )
 
 button = Button(
   text = 'Click',
   width = 30,
   height = 5,
-  activebackground = 'red'
+  activebackground = 'cyan2'
 )
 
 label.pack()
