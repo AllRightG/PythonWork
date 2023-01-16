@@ -17,7 +17,8 @@ button = Button(
   text = 'Click',
   width = 30,
   height = 5,
-  activebackground = 'cyan2'
+  activebackground = 'cyan2',
+  background='dark violet'
 )
 
 label.pack()
