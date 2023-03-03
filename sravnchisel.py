@@ -1,3 +1,4 @@
+#['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',1,2,3,4,5,6,7,8,9,0]
 #игра "угадай число"
 '''from tkinter import *
 def sravn():
@@ -51,3 +52,29 @@ ent = Entry(wind, width=35, bg='gold')
 ent.pack()
 
 wind.mainloop()'''
+
+
+#Программа по генерации рандомного пароля   dodger blue, cyan, magenta, tomato, gold, steel blue
+'''from tkinter import *
+import random as rand
+def password():
+	Verh=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',1,2,3,4,5,6,7,8,9,0]
+	
+	pas = rand.sample(Verh, 6)
+	pl['text'] = f'Ваш пароль: {pas}'
+
+
+
+root = Tk()
+root.geometry('500x300')
+root.title('Генератор паролей')
+root.resizable(0, 0)
+
+Label(root, bg='coral', height=3,width=22, text='Ваш пароль:').pack(side=TOP)
+
+Button(root, bg='spring green', fg='black', height=2,width=40, text='Сгенерировать пароль', command=password).pack(side=BOTTOM)
+
+pl = Label(root, bg='dodger blue', width=35, height=3, text='Тут будет ваш пароль после генерации')
+pl.place(x=130,y=130)
+
+root.mainloop()'''
