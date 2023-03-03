@@ -1,4 +1,5 @@
-from tkinter import *
+#игра "угадай число"
+'''from tkinter import *
 def sravn():
     first = ent1.get()
     second = ent2.get()
@@ -26,4 +27,27 @@ lbl.pack(side=TOP)
 rs = Label(window, bg='dodger blue', fg='white', text='', height=2,width=60)
 rs.place(x= 90,y=150)
 
-window.mainloop()
+window.mainloop()'''
+
+#Прога по спросу имени у пользователя и выведения в окошко
+'''from tkinter import *
+def hello():
+    name=ent.get()
+    lbl['text'] = f'Здравствуйте, {name}'
+
+wind = Tk()
+wind.geometry('400x300')
+
+lbl = Label(wind, bg='sea green', text='Введите ваше имя', height=2, width=35)
+lbl.pack(side=TOP)
+
+btn = Button(wind, text='Поприветствовать пользователя', 
+             bg='firebrick1',
+             width=30,
+             height=3, command=hello)
+btn.pack(side=BOTTOM)
+
+ent = Entry(wind, width=35, bg='gold')
+ent.pack()
+
+wind.mainloop()'''
