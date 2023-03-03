@@ -2,10 +2,10 @@ from tkinter import *
 
 from random import *
 
-
+t = randint(1, 3)
 def change():
-    list = ['white','black','orange','green','yellow']
-    a = choice(list)
+    t = [1,2,3]
+    figura = choice(t)
 
     x = randint(1,300)
     y = randint(1,300)
@@ -14,13 +14,13 @@ def change():
     c = randint(1,300)
     m = randint(1,300)
 
-    t = randint(1, 3)
-    if t == 1:
-        square = canvas.create_polygon(x,y,z,q, c,m, fill=a)
-    elif t == 2:
-        square = canvas.create_rectangle(x,y,z,q, fill=a)
-    elif t == 3:
-        square = canvas.create_oval(x,y,z,q, fill=a)
+
+    if figura == 1:
+        square = canvas.create_polygon(x,y,z,q, c,m, fill='black')
+    elif figura == 2:
+        square = canvas.create_rectangle(x,y,z,q, fill='black')
+    elif figura == 3:
+        square = canvas.create_oval(x,y,z,q, fill='black')
 
 root=Tk()
 root.geometry('500x500')
