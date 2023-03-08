@@ -15,16 +15,3 @@
 # a = [random.randint(0,10) for i in range(20)]
 #print(a)
 
-from tkinter import *
-
-window = Tk()
-window.geometry('250x200')
-
-text = Text(
-    font = 'Calibri',
-    wrap = WORD
-)
-text.pack()
-
-
-window.mainloop()

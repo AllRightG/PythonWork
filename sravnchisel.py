@@ -1,6 +1,6 @@
 #['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',1,2,3,4,5,6,7,8,9,0]
 #игра "угадай число"
-'''from tkinter import *
+from tkinter import *
 def sravn():
     first = ent1.get()
     second = ent2.get()
@@ -28,10 +28,10 @@ lbl.pack(side=TOP)
 rs = Label(window, bg='dodger blue', fg='white', text='', height=2,width=60)
 rs.place(x= 90,y=150)
 
-window.mainloop()'''
+window.mainloop() 
 
 #Прога по спросу имени у пользователя и выведения в окошко
-'''from tkinter import *
+""" from tkinter import *
 def hello():
     name=ent.get()
     lbl['text'] = f'Здравствуйте, {name}'
@@ -51,17 +51,16 @@ btn.pack(side=BOTTOM)
 ent = Entry(wind, width=35, bg='gold')
 ent.pack()
 
-wind.mainloop()'''
-
+wind.mainloop()
+ """
 
 #Программа по генерации рандомного пароля   dodger blue, cyan, magenta, tomato, gold, steel blue
-'''from tkinter import *
+""" from tkinter import *
 import random as rand
 def password():
-	Verh=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',1,2,3,4,5,6,7,8,9,0]
-	
+	Verh=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0']
 	pas = rand.sample(Verh, 6)
-	pl['text'] = f'Ваш пароль: {pas}'
+	pl['text'] = f'{pas}'
 
 
 
@@ -77,4 +76,62 @@ Button(root, bg='spring green', fg='black', height=2,width=40, text='Сгене�
 pl = Label(root, bg='dodger blue', width=35, height=3, text='Тут будет ваш пароль после генерации')
 pl.place(x=130,y=130)
 
-root.mainloop()'''
+root.mainloop() """
+
+# 7
+# Напишите программу, в которой определенный символ в тексте будет заменять 
+# с одного на другой. Текст пользователь пишет в виджете Text, так же у пользователя
+# должна быть возможность выбрать с какого на какой символ он хочет поменять.
+# Символы должны заменять по нажатию на кнопку.
+# 2 entry, 1 text, 1 button
+#1 entry - символ который хотим поменять, 2 entry - символ на который мы поменяем символ из 1 entry
+ 
+""" from tkinter import *
+global txet
+def change():
+	it = txet.get()
+
+
+
+wind = Tk()
+wind.geometry('500x300')
+wind['bg'] = 'RoyalBlue1'
+wind.resizable(0,0)
+
+txet = Text(
+    wind,
+    width=40,
+    height=5,
+    bg='salmon',
+    font='calibri 15',
+    
+)
+txet.pack()
+
+btn = Button(
+    wind,
+    width=30,
+    height=2,
+    bg='lawngreen',
+    text='Нажмите чтобы изменить символы'
+)
+btn.pack(side=BOTTOM)
+
+ent = Entry(
+    wind,
+    width=10,
+    bg = 'darkslategray',
+    fg='white'
+)
+ent.place(x= 0, y=124)
+
+ent2 = Entry(
+wind,
+width=10,
+bg = 'darkslategray',
+fg='white'
+)
+ent2.place(x=436,y=124)
+
+wind.mainloop() """
+print(23*7)
